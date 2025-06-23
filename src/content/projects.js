@@ -16,7 +16,7 @@ export default [
     skills: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'ES6', 'ReactJS', 'Redux'],
     image: travlr,
     links: {
-      github: 'https://github.com/vai0/travlr',
+      github: 'https://github.com/jchi2241/travlr',
       preview: 'https://travlr.justinchi.me/',
     },
   },
@@ -27,7 +27,7 @@ export default [
     skills: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'ES6', 'ReactJS'],
     image: stockmarketchart,
     links: {
-      github: 'https://github.com/vai0/stockmarketchart',
+      github: 'https://github.com/jchi2241/stockmarketchart',
       preview: 'https://stock.justinchi.me/',
     },
   },
@@ -46,7 +46,7 @@ export default [
     ],
     image: wakeyalarmclock,
     links: {
-      github: 'https://github.com/vai0/alarmclock',
+      github: 'https://github.com/jchi2241/alarmclock',
       preview: 'https://alarmclock.justinchi.me/',
     },
   },
@@ -57,7 +57,7 @@ export default [
     skills: ['HTML5', 'CSS3', 'Sass', 'JavaScript'],
     image: wakeybackgrounds,
     links: {
-      github: 'https://github.com/vai0/weather-animations',
+      github: 'https://github.com/jchi2241/weather-animations',
       preview: 'https://weather-anim.justinchi.me/',
     },
   },
@@ -75,7 +75,7 @@ export default [
     ],
     image: calculator,
     links: {
-      github: 'https://github.com/vai0/material_calculator',
+      github: 'https://github.com/jchi2241/material_calculator',
       preview: 'https://calc.justinchi.me/',
     },
   },
@@ -86,7 +86,7 @@ export default [
     skills: ['HTML5', 'CSS3', 'Sass', 'JavaScript', 'ReactJS'],
     image: portfolio,
     links: {
-      github: 'https://github.com/vai0/portfolio',
+      github: 'https://github.com/jchi2241/portfolio',
       preview: 'https://www.justinchi.me/',
     },
   },
@@ -97,7 +97,7 @@ export default [
     skills: ['HTML5', 'CSS3'],
     image: tomsmetal,
     links: {
-      github: 'https://github.com/vai0/tomsmetal_site',
+      github: 'https://github.com/jchi2241/tomsmetal_site',
       preview: 'https://tomsmetal.justinchi.me/',
     },
   },
