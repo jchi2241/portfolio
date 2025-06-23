@@ -1,3 +1,6 @@
+@use '../scss/breakpoints' as *;
+@use '../scss/colors' as *;
+
 .projects-container {
   margin: 0 auto;
   font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;

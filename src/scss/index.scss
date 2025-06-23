@@ -1,14 +1,14 @@
-@import './fonts/camphor';
-@import 'reset';
-@import 'colors';
-@import 'breakpoints';
+@use './fonts/camphor';
+@use 'reset';
+@use 'colors' as *;
+@use 'breakpoints' as *;
 
-@import '../components/Navbar';
-@import '../components/Hero';
-@import '../components/About';
-@import '../components/Projects';
-@import '../components/Contact';
-@import '../components/Footer';
+@use '../components/Navbar';
+@use '../components/Hero';
+@use '../components/About';
+@use '../components/Projects';
+@use '../components/Contact';
+@use '../components/Footer';
 
 @font-face {
   font-family: 'Monaco';

@@ -1,51 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-class Typewriter extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: '',
-    };
-  }
+const Typewriter = ({
+  text = 'Give me something to type!',
+  minTypeSpeed = 50,
+  maxTypeSpeed = 90,
+  initDelay = 700,
+  className = '',
+}) => {
+  const [displayText, setDisplayText] = useState('');
 
-  clicketyClack(text, minTypeSpeed, maxTypeSpeed, initDelay) {
-    let str = '';
-    let typeSpeed = 0;
-    const self = this;
+  useEffect(
+    () => {
+      let str = '';
+      let typeSpeed = 0;
 
-    text.split('').forEach(c => {
-      typeSpeed += Math.random() * (maxTypeSpeed - minTypeSpeed) + minTypeSpeed;
-      setTimeout(() => {
-        str += c;
-        this.setState({ text: str });
-      }, initDelay + typeSpeed);
-    });
-  }
+      const clicketyClack = () => {
+        text.split('').forEach(c => {
+          typeSpeed +=
+            Math.random() * (maxTypeSpeed - minTypeSpeed) + minTypeSpeed;
+          setTimeout(() => {
+            str += c;
+            setDisplayText(str);
+          }, initDelay + typeSpeed);
+        });
+      };
+      clicketyClack();
+    },
+    [text, minTypeSpeed, maxTypeSpeed, initDelay]
+  );
 
-  componentDidMount() {
-    this.clicketyClack(
-      this.props.text,
-      this.props.minTypeSpeed,
-      this.props.maxTypeSpeed,
-      this.props.initDelay
-    );
-  }
-
-  render() {
-    return (
-      <div className={this.props.className}>
-        {this.state.text}
-        <span>&nbsp;</span>
-      </div>
-    );
-  }
-}
-
-Typewriter.defaultProps = {
-  text: 'Give me something to type!',
-  minTypeSpeed: 50,
-  maxTypeSpeed: 90,
-  initDelay: 700,
+  return (
+    <div className={className}>
+      {displayText}
+      <span>&nbsp;</span>
+    </div>
+  );
 };
 
 export default Typewriter;

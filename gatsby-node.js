@@ -1,11 +1,10 @@
-const path = require('path')
+const path = require('path');
 
-exports.modifyWebpackConfig = function({ config, env }) {
-  config.merge({
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
     resolve: {
-      root: path.resolve(__dirname, './src'),
-      extensions: ['', '.js', '.json'],
+      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+      extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
     },
-  })
-  return config
-}
+  });
+};

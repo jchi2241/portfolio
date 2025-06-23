@@ -11,23 +11,19 @@
     "prettier": "prettier --write 'src/**/*.js'"
   },
   "devDependencies": {
-    "anchorate": "1.2.3",
     "eslint": "4.19.1",
     "eslint-plugin-prettier": "2.6.0",
-    "gatsby": "1.9.269",
-    "gatsby-link": "1.6.44",
-    "gatsby-plugin-favicon": "2.1.1",
-    "gatsby-plugin-google-analytics": "1.0.31",
-    "gatsby-plugin-react-helmet": "2.0.11",
-    "gatsby-plugin-sass": "1.0.26",
+    "gatsby": "5.14.5",
+    "gatsby-plugin-google-analytics": "5.14.0",
+    "gatsby-plugin-manifest": "5.14.0",
+    "gatsby-plugin-sass": "6.14.0",
     "prettier": "1.13.4",
-    "react-helmet": "5.2.0"
+    "sass": "1.89.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome": "1.1.8",
-    "@fortawesome/fontawesome-free-brands": "5.0.13",
-    "@fortawesome/fontawesome-free-solid": "5.0.13",
-    "@fortawesome/react-fontawesome": "0.0.20",
-    "react-scrollchor": "5.1.0"
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "0.2.2"
   }
 }

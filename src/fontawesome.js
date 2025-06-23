@@ -1,6 +1,5 @@
-import fontawesome from '@fortawesome/fontawesome';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import fabGithub from '@fortawesome/fontawesome-free-brands/faGithub';
-import fasExternalLinkAlt from '@fortawesome/fontawesome-free-solid/faExternalLinkAlt';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
-fontawesome.library.add(fabGithub, fasExternalLinkAlt);
+library.add(faGithub, faExternalLinkAlt);

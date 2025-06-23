@@ -8,7 +8,7 @@ import tomsmetal from 'images/tomsmetal.jpg';
 
 // image can be any size. just make sure it is close to a 1:1 ratio - a square.
 
-export default [
+const projects = [
   {
     title: 'Travlr',
     description:
@@ -57,7 +57,7 @@ export default [
     skills: ['HTML5', 'CSS3', 'Sass', 'JavaScript'],
     image: wakeybackgrounds,
     links: {
-      github: 'https://github.com/jchi2241/weather-animations',
+      github: 'https://github.com/jchi2241/alarmclockweather_animations',
       preview: 'https://weather-anim.justinchi.me/',
     },
   },
@@ -102,3 +102,5 @@ export default [
     },
   },
 ];
+
+export default projects;

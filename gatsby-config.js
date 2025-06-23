@@ -3,33 +3,20 @@ module.exports = {
     title: `Justin's Portfolio`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `UA-94088018-1`,
         anonymize: true,
-        respectDNT: true
+        respectDNT: true,
       },
     },
     {
-      resolve: `gatsby-plugin-favicon`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        logo: "./src/images/favicon.png",
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false
-        }
-      }
-    }
+        icon: './src/images/favicon.png',
+      },
+    },
   ],
 };

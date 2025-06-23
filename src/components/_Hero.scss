@@ -1,3 +1,6 @@
+@use '../scss/breakpoints' as *;
+@use '../scss/colors' as *;
+
 .hero-container {
   margin: 0 auto;
   margin-top: 20vh;

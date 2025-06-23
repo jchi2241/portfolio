@@ -1,3 +1,6 @@
+@use '../scss/breakpoints' as *;
+@use '../scss/colors' as *;
+
 .contact-links {
   font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
   font-size: 1.2em;

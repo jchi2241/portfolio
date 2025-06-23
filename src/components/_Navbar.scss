@@ -1,3 +1,6 @@
+@use '../scss/breakpoints' as *;
+@use '../scss/colors' as *;
+
 .navbar-container {
   display: flex;
   justify-content: flex-end;
